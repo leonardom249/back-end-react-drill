@@ -31,7 +31,7 @@ export class CharacterSearch extends React.Component {
                 
                 <form
                   onSubmit={e=> { e.preventDefault();
-                    this.props.dispatch(searchCharacters(this.input.value))
+                    this.props.dispatch(searchCharacters(e.target.input.value))
                     }
                   }
                 >
